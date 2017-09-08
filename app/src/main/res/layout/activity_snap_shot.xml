@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+	<LinearLayout
+	    android:gravity="center_vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1">
+	    <Button
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/btn01"
+	        android:text="获取webView快照"/>
+	    
+	    <Button
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/btn02"
+	        android:text="获取截屏"/>
+	    
+	    <Button
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/btn03"
+	        android:text="获取webView显示区域的截图"/>
+	</LinearLayout>
+    
+    <ImageView 
+        android:layout_width="314dip"
+        android:layout_height="200dip"
+        android:id="@+id/imageView"
+        android:layout_weight="1"/>
+    
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="200dip"/>
+
+</LinearLayout>
